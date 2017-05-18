@@ -25,7 +25,15 @@ public class QuickFind implements UnionFind {
         elements = new int[noElements];
         IntStream.range(0, noElements).forEach(i -> elements[i] = i);
     }
-
+    
+    /**
+     * Checks if p and q are connected
+     * 
+     * @param p
+     * @param q
+     * @return true if connected, else false
+     */
+    @Override
     public boolean isConnected(int p, int q) {
         return elements[p] == elements[q];
     }
@@ -38,6 +46,7 @@ public class QuickFind implements UnionFind {
      * @param p, the first element
      * @param q , the second element
      */
+    @Override
     public void unionOf(int p, int q) {
         int indexP = elements[p];
         int indexQ = elements[q];
