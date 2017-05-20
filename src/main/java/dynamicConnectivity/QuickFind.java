@@ -8,6 +8,7 @@ import java.util.stream.IntStream;
  * @author MITRA
  *
  * QuickFind algorithm has an expensive Union operation.
+ * But a quick find operation
  * Union = O(n)
  * Find = O(1)
  * N union commands on N objects = O(N^2)
