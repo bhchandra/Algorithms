@@ -8,7 +8,7 @@ import java.util.stream.IntStream;
  *
  * @author MITRA
  */
-public class QuickUnion implements UnionFind {
+public class QuickUnion implements IUnionFind {
 
     private int[] elements;
 
@@ -70,6 +70,11 @@ public class QuickUnion implements UnionFind {
         //shorter version of the algorithm.
         //while(x =! elements[x]) x = elements[x];
         //return x;
+    }
+
+    @Override
+    public int getComponent(int p) {
+        return root(p);
     }
 
 }

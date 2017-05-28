@@ -13,7 +13,7 @@ import java.util.stream.IntStream;
  * Find = O(1)
  * N union commands on N objects = O(N^2)
  */
-public class QuickFind implements UnionFind {
+public class QuickFind implements IUnionFind {
 
     private int[] elements;
 
@@ -56,6 +56,11 @@ public class QuickFind implements UnionFind {
 
         IntStream.range(0, elements.length).forEach(changeIndexOfPConnected);
 
+    }
+
+    @Override
+    public int getComponent(int p) {
+        return elements[p];
     }
 
 }
