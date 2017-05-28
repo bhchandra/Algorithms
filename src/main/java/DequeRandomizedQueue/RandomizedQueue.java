@@ -71,10 +71,10 @@ public class RandomizedQueue<Item> implements Iterable<Item> {
         s[random] = s[count - 1];
         s[count] = null;
         count--;
-        for (int i = 0; i < count; i++) {
-              System.out.printf("%d-", s[i]);
-            }
-        System.out.println("");
+//        for (int i = 0; i < count; i++) {
+//              System.out.printf("%d-", s[i]);
+//            }
+//        System.out.println("");
         return temp;
     }
 
@@ -121,11 +121,11 @@ public class RandomizedQueue<Item> implements Iterable<Item> {
             for (int i = 0; i < size; i++) {
                 copy[i] = s[i];
             }
-            System.out.println("Copied Array: ");
-            for(int j = 0; j < size; j++){
-                System.out.printf("%d-", copy[j]);
-            }
-            System.out.println("");
+//            System.out.println("Copied Array: ");
+//            for(int j = 0; j < size; j++){
+//                System.out.printf("%d-", copy[j]);
+//            }
+//            System.out.println("");
         }
 
         @Override
