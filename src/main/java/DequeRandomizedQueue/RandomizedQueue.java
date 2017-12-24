@@ -189,7 +189,9 @@ public class RandomizedQueue<Item> implements Iterable<Item> {
 //        rq.dequeue();
 //        rq.dequeue();
         System.out.println("size :" + rq.size());
-        
+
         for (Integer x : rq) {
             System.out.printf("%d-", x);
+        }
+    }
 }
