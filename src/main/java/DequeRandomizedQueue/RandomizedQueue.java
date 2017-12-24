@@ -117,9 +117,9 @@ public class RandomizedQueue<Item> implements Iterable<Item> {
             copyFromOriginal(copy, s);
         }
 
-        private void copyFromOriginal(Item[] copy, Item[] s) {
+        private void copyFromOriginal(Item[] x, Item[] y) {
             for (int i = 0; i < size; i++) {
-                copy[i] = s[i];
+                x[i] = y[i];
             }
 //            System.out.println("Copied Array: ");
 //            for(int j = 0; j < size; j++){
@@ -156,7 +156,7 @@ public class RandomizedQueue<Item> implements Iterable<Item> {
 
         @Override
         public void remove() {
-            throw new NoSuchElementException();
+            throw new UnsupportedOperationException();
         }
 
         private void resize(int capacity) {
@@ -190,12 +190,6 @@ public class RandomizedQueue<Item> implements Iterable<Item> {
 //        rq.dequeue();
         System.out.println("size :" + rq.size());
         
-//        Iterator<Integer> it = rq.iterator();
-//        System.out.println(it.hasNext());
-//        System.out.println(it.next());
         for (Integer x : rq) {
             System.out.printf("%d-", x);
-        }
-
-    }
 }
